@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* 🌞 Mode Clair - Neon */
+    --background: 200 100% 95%;           /* Bleu très clair */
+    --foreground: 0 0% 10%;               /* Noir profond */
+    --card: 180 100% 98%;                 /* Vert très clair */
+    --card-foreground: 0 0% 10%;          /* Noir profond */
+    --popover: 190 100% 96%;              /* Cyan très clair */
+    --popover-foreground: 0 0% 10%;       /* Noir profond */
+    --primary: 300 100% 50%;              /* Rose néon */
+    --primary-foreground: 0 0% 100%;      /* Blanc pur */
+    --secondary: 280 100% 60%;            /* Violet néon */
+    --secondary-foreground: 0 0% 100%;    /* Blanc pur */
+    --muted: 60 100% 90%;                 /* Jaune très clair */
+    --muted-foreground: 0 0% 10%;         /* Noir profond */
+    --accent: 50 100% 50%;                /* Jaune néon */
+    --accent-foreground: 0 0% 100%;       /* Blanc pur */
+    --destructive: 0 100% 60%;            /* Rouge néon */
+    --destructive-foreground: 0 0% 100%;  /* Blanc pur */
+    --border: 0 0% 80%;                   /* Gris clair */
+    --input: 0 0% 80%;                    /* Gris clair */
+    --ring: 180 100% 70%;                 /* Cyan néon */
+    --chart-1: 340 100% 50%;              /* Rose néon */
+    --chart-2: 50 100% 50%;               /* Jaune néon */
+    --chart-3: 160 100% 50%;              /* Vert néon */
+    --chart-4: 220 100% 60%;              /* Bleu néon */
+    --chart-5: 280 100% 60%;              /* Violet néon */
+    --radius: 0.5rem;                     /* Coins arrondis */
+  }
+
+  .dark {
+    /* 🌙 Mode Sombre - Neon */
+    --background: 240 100% 5%;            /* Bleu très foncé */
+    --foreground: 0 0% 90%;               /* Blanc cassé */
+    --card: 250 100% 10%;                 /* Violet très foncé */
+    --card-foreground: 0 0% 90%;          /* Blanc cassé */
+    --popover: 240 100% 7%;               /* Bleu foncé */
+    --popover-foreground: 0 0% 90%;       /* Blanc cassé */
+    --primary: 300 100% 60%;              /* Rose néon brillant */
+    --primary-foreground: 0 0% 100%;      /* Blanc pur */
+    --secondary: 280 100% 70%;            /* Violet néon brillant */
+    --secondary-foreground: 0 0% 100%;    /* Blanc pur */
+    --muted: 60 100% 40%;                 /* Jaune foncé */
+    --muted-foreground: 0 0% 90%;         /* Blanc cassé */
+    --accent: 50 100% 60%;                /* Jaune néon brillant */
+    --accent-foreground: 0 0% 100%;       /* Blanc pur */
+    --destructive: 0 100% 60%;            /* Rouge néon brillant */
+    --destructive-foreground: 0 0% 100%;  /* Blanc pur */
+    --border: 0 0% 20%;                   /* Gris foncé */
+    --input: 0 0% 20%;                    /* Gris foncé */
+    --ring: 180 100% 60%;                 /* Cyan néon brillant */
+    --chart-1: 340 100% 60%;              /* Rose néon brillant */
+    --chart-2: 50 100% 60%;               /* Jaune néon brillant */
+    --chart-3: 160 100% 60%;              /* Vert néon brillant */
+    --chart-4: 220 100% 70%;              /* Bleu néon brillant */
+    --chart-5: 280 100% 70%;              /* Violet néon brillant */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
